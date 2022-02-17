@@ -11,13 +11,6 @@ import java.util.List;
 @Component
 public class PostRepository {
 
-    public List<Post> getAllPosts() {
-        return ALL_POSTS;
-    }
-
-    public Post findById(Long id) {
-        return null;
-    }
         private final List<Post> ALL_POSTS = new ArrayList<>(Arrays.asList(
                 new Post(1l, "Earbuds",
                         "You have got to try these in your ears. So tiny and can even block the sounds of screaming toddlers if you so desire.",
@@ -52,6 +45,13 @@ public class PostRepository {
                         "When a stranger passes us a top secret SD card the adventure begins.  Jason Bourne says, \"Hi\".",
                         "Sarah Holderness", new Date())
         ));
+    public List<Post> getAllPosts() {
+        return ALL_POSTS;
+    }
+
+    public Post findById(Long id) {
+        return null;
+    }
     }
 
 
