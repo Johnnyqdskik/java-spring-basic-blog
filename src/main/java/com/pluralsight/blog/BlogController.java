@@ -24,7 +24,7 @@ public class BlogController {
 
         public String postDetails (@PathVariable Long id, ModelMap modelMap) {
 
-        modelMap.put("post", postRepository)
+        modelMap.put("post", postRepository);
 
 
         Post post = postRepository.findById(id);
